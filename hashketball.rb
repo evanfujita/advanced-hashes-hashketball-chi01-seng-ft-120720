@@ -149,9 +149,9 @@ def team(player)
     player_hash = Hash.new
     game_hash.each do |key, value|
       if game_hash[:home][:players].include?(player)
-        player_hash[:team] = game_hash[:home][:players]
-        binding.pry
-      elsif 
+        player_hash = game_hash[:home][:players]
+        
+      else
         game_hash[:away][:players].include?(player)
       player_hash[:team] = game_hash[:away][:players]
       end
