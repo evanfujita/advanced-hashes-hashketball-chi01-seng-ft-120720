@@ -167,6 +167,18 @@ def home_team_feet
   end
   rebounds
 end
+
+def away_team_feet
+  number = 0
+  rebounds = 0
+  game_hash[:away][:players].each do |key, value|
+    if key[:shoe] > number
+      number = key[:shoe]
+      rebounds = key[:rebounds]
+    end
+  end
+  rebounds
+end
   
 
 def team_player(player)
@@ -218,5 +230,19 @@ def player_numbers(name)
 end
 
 def big_shoe_rebounds
-
+  number = 0
+  rebounds = 0
+  game_hash[:away][:players].each do |key, value|
+    if key[:shoe] > number
+      h_number = key[:shoe]
+      h_rebounds = key[:rebounds]
+    end
+  end
+  game_hash[:away][:players].each do |key, value|
+    if key[:shoe] > number
+      number = key[:shoe]
+      rebounds = key[:rebounds]
+    end
+  end
+  if 
 end
