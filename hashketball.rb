@@ -220,6 +220,7 @@ def big_shoe_rebounds
         a_number = key[:shoe]
         away_beast = key[:rebounds]
         away_bigfoot = key[:player_name]
+        binding.pry
       end
     end
     if a_number > h_number
