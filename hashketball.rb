@@ -209,6 +209,7 @@ def big_shoe_rebounds
   number = 0
   game_hash.each do |key, value|
     value.each do |key1, value1|
+      value.key
     binding.pry
   end
 end
