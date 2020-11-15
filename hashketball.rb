@@ -178,6 +178,6 @@ end
 
 def num_points_scored(player)
   stats = find(player)
-  binding.pry
+  #binding.pry
   stats[:points]
 end
