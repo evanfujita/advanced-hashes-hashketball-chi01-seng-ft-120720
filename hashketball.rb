@@ -169,12 +169,12 @@ def find(player)
 end
 
 def player_stats(player)
-  stats = find(player)
-  stats
+  stats = team(player)
+  stats.each do |key, value|
+    
+  end
   
 end
-
-
 
 def num_points_scored(player)
   stats = find(player)
