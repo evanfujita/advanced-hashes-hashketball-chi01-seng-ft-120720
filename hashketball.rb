@@ -197,6 +197,7 @@ def player_numbers(team)
       
   binding.pry
 end
+end
 
 def big_shoe_rebounds
   
