@@ -150,7 +150,6 @@ def team(name)
   game_hash.map do |key, value|
       puts "YES"
       
-  end
   binding.pry
 end
 end
