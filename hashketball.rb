@@ -153,7 +153,7 @@ def team(name)
       game_hash[:away][:team_name] == name
         team_hash = game_hash[:away]
       end
-          binding.pry
+
       team_hash
 end
 
