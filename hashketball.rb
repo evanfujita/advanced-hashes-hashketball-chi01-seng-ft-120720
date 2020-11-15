@@ -231,19 +231,15 @@ end
 
 def big_shoe_rebounds
   foot_hash = Hash.new
-  game_hash[:away][:players].each do |key, value|
-    if key[:shoe] > size
+  game_hash[:home][:players].each do |key, value|
       size = key[:shoe]
       rebounds = key[:rebounds]
       foot_hash[size] = key[:rebounds]
-    end
   end
   game_hash[:away][:players].each do |key, value|
-    if key[:shoe] > size
-      a_size = key[:shoe]
-      a_rebounds = key[:rebounds]
-      foot_hash[a_size] = a_rebounds
-      
+      size = key[:shoe]
+      rebounds = key[:rebounds]
+      foot_hash[size] = key[:rebounds]
     end
     binding.pry
   end
