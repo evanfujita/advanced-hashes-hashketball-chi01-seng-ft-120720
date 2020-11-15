@@ -171,9 +171,6 @@ end
 def player_stats(player)
   stats = team(player)
   stats
-    
-  end
-  
 end
 
 def num_points_scored(player)
