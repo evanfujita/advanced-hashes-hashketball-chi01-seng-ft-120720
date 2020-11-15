@@ -223,7 +223,7 @@ def big_shoe_rebounds
       number = key[:shoe]
       beast_rebounds = key[:rebounds]
     end
-    
+    beast_rebounds
   end
   binding.pry
 end
