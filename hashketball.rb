@@ -171,7 +171,6 @@ end
 
 def player_stats(player)
     player_hash = Hash.new
-    game_hash.each do |key, value|
       if game_hash[:home][:players].include?(player)
         player_hash = game_hash[:home][:players]
         binding.pry
@@ -180,7 +179,7 @@ def player_stats(player)
       player_hash = game_hash[:away][:players]
       end
       binding.pry
-    end
+  
     player_hash
 end
 
