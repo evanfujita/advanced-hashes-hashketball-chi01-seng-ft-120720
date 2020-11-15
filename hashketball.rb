@@ -146,8 +146,15 @@ def team_colors(team)
 end
 
 def team(name)
-
-
+    team_hash = Hash.new
+     if game_hash[:home][:team_name] == team
+       team_hash = game_hash[:home]
+      elsif
+      game_hash[:away][:team_name] == team
+        team_hash = game_hash[:away]
+      end
+          binding.pry
+      team_hash
 end
 
 def team_player(player)
@@ -190,15 +197,7 @@ def shoe_size(player)
 end
 
 def player_numbers(team)
-    team_hash = Hash.new
-     if game_hash[:home][:team_name] == team
-       team_hash = game_hash[:home]
-      elsif
-      game_hash[:away][:team_name] == team
-        team_hash = game_hash[:away]
-      end
-          binding.pry
-      team_hash
+
 end
 
 def big_shoe_rebounds
