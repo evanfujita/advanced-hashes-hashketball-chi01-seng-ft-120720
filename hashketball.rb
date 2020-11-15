@@ -150,7 +150,7 @@ def team(player)
     game_hash.each do |key, value|
       if game_hash[:home][:players].include?(player)
         player_hash = game_hash[:home][:players]
-        
+        binding.pry
       else
         game_hash[:away][:players].include?(player)
       player_hash = game_hash[:away][:players]
