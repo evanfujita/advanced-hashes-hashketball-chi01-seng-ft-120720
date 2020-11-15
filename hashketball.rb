@@ -156,15 +156,16 @@ def team(name)
       team_hash
 end
 
-def team_feet
+def home_team_feet
   number = 0
+  rebounds = 0
   game_hash[:home][:players].each do |key, value|
     if key[:shoe] > number
       number = key[:shoe]
-      beast_rebounds = key[:rebounds]
+      rebounds = key[:rebounds]
     end
-    binding.pry
   end
+  rebounds
 end
   
 
@@ -217,13 +218,5 @@ def player_numbers(name)
 end
 
 def big_shoe_rebounds
-  number = 0
-  rebounds = 0
-  game_hash[:home][:players].each do |key, value|
-    if key[:shoe] > number
-      number = key[:shoe]
-      rebounds = key[:rebounds]
-    end
-  end
-  binding.pry
+
 end
