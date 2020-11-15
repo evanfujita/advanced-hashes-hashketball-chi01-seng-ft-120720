@@ -169,7 +169,6 @@ def find(player)
 end
 
 def player_stats(player)
-  team(player)
   find(player)
   
 end
