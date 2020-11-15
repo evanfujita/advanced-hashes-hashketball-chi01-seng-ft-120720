@@ -139,9 +139,9 @@ def most_points_scored
     player = key[:player_name]
     hash_points[player] = points
 end
-  hash_points.sort.max
+  hash_points.sort
 end
-
+most_points_scored
 
 
 def team_names
