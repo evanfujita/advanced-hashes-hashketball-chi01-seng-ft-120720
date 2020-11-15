@@ -210,14 +210,14 @@ def big_shoe_rebounds
   a_number = 0
     game_hash[:home][:players].each do |key, value|
       if key[:shoe] > h_number
-        number = key[:shoe]
+        h_number = key[:shoe]
         home_beast = key[:player_name] 
         binding.pry
       end
     end
     game_hash[:away][:players].each do |key, value|
       if key[:shoe] > a_number
-        number = key[:shoe]
+        a_number = key[:shoe]
         away_beast = key[:player_name]
       end
     end
