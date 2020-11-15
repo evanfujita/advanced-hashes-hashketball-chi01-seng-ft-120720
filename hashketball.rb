@@ -145,10 +145,10 @@ def team_colors(team)
   team_colors
 end
 
-def team(team_name)
+def team(name)
   team_hash
   game_hash.map do |key, value|
-    if key[:team_name] == team_name
+    if value[:team_name] == name
       binding.pry
   end
 end
