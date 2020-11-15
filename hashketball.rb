@@ -171,7 +171,7 @@ end
 
 def player_stats(player)
     player_hash = Hash.new
-      game_hash[:home][:players].map |key, value|
+      game_hash[:home][:players].map do |key, value|
         if value[:player_name] == (player)
         player_hash = game_hash[:home][:players]
       else
@@ -180,7 +180,6 @@ def player_stats(player)
       end
     end
     player_hash
-end
 end
 
 def num_points_scored(player)
