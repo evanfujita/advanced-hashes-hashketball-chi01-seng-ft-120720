@@ -147,12 +147,10 @@ end
 
 def team(player)
     player_hash = Hash.new
-    game_hash.each do |key, value|
-      if game_hash[:home][:players].include?(player)
+      game_hash[:home][:players].map do |key, value|
+        if key[:player_name] == (player)
         player_hash = game_hash[:home][:players]
-        binding.pry
       else
-        game_hash[:away][:players].include?(player)
       player_hash = game_hash[:away][:players]
       end
     end
