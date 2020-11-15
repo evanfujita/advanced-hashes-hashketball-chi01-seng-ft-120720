@@ -169,12 +169,11 @@ def find(player)
 end
 
 def player_stats(player)
-  stats = team(player)
+  stats = find(player)
   stats
 end
 
 def num_points_scored(player)
   stats = find(player)
-  #binding.pry
   stats[:points]
 end
