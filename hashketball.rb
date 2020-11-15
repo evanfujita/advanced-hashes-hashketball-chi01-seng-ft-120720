@@ -175,6 +175,7 @@ def player_stats(player)
     key[:player_name] = key
    
   binding.pry
+  puts "YES"
 end
 binding.pry
 end
