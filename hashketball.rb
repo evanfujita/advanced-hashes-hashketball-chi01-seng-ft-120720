@@ -221,5 +221,10 @@ def big_shoe_rebounds
   
 def most_points_scored
   points = Hash.new
-  game_hash[:home]
+  game_hash[:home][:players].each do |key, value|
+    
+    binding.pry
+  
+end
+end
   
