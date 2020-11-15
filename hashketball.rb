@@ -180,28 +180,24 @@ def player_with_longest_name
   end
   longun
 end
-player_with_longest_name
+
 
 def long_name_steals_a_ton?
-  name = player_with player_with_longest_name
-  hash = Hash.new
-      game_hash[:home][:players].map do |key, value|
-        keyd
-      end
-         game_hash[:away][:players].map do |key, value|
-        name_array.push(key[:player_name])
-   count += 1
-    end
-  name_array.each do |name|
-    if name.length > length
-      longun = name
-      length = name.length
-    end
+  name = player_with_longest_name
+  steal_hash = Hash.new
+     
     game_hash[:home][:players].each do |key, value|
       steals = key[:steals]
       name = key[:player_name]
-      foot_hash[name] = key[:steals]
-  
+      steal_hash[name] = key[:steals]
+    end
+      game_hash[:away][:players].each do |key, value|
+      steals = key[:steals]
+      name = key[:player_name]
+      steal_hash[name] = key[:steals]
+    end
+    steal_hash.sort.max[1]
+    
 end
     
 
