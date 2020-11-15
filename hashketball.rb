@@ -172,6 +172,7 @@ end
 def player_stats(player)
     player_hash = Hash.new
       game_hash[:home][:players].map do |key, value|
+        binding.pry
         if value[:player_name] == (player)
         player_hash = game_hash[:home][:players]
       else
