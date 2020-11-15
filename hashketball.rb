@@ -245,8 +245,9 @@ def big_shoe_rebounds
       a_size = key[:shoe]
       a_rebounds = key[:rebounds]
       foot_hash[a_size] = a_rebounds
-      binding.pry
+      
     end
+    binding.pry
   end
   
 end
