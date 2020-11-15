@@ -149,6 +149,10 @@ def team(team_name)
   team_hash
   game_hash.map do |key, value|
     if key[:team_name] == team_name
+      binding.pry
+  end
+end
+end
 
 def team_player(player)
     player_hash = Hash.new
