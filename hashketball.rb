@@ -153,10 +153,10 @@ def team(player)
         
       else
         game_hash[:away][:players].include?(player)
-      player_hash[:team] = game_hash[:away][:players]
+      player_hash = game_hash[:away][:players]
       end
     end
-    player_hash[:team]
+    player_hash
 end
 
 def find(player)
