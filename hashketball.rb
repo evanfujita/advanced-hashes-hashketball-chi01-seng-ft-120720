@@ -171,7 +171,6 @@ def player_stats(player)
   stats
 end
 
-
 def num_points_scored(player)
   points = find(player)
   points[:points]
