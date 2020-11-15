@@ -183,3 +183,10 @@ def shoe_size(player)
   player = find(player)
   player[:shoe]
 end
+
+def player_number(player)
+  player = find(player)
+  player[:number]
+end
+
+def big_shoe_rebounds
