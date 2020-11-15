@@ -190,11 +190,11 @@ def shoe_size(player)
 end
 
 def player_numbers(team)
-  numbers = Array.new
     team_hash = Hash.new
   game_hash[:home].map do |key, value|
       if key[:team_name] == team
         team_hash = game_hash[:home]
+        binding.pry
       end
     end
   game_hash[:away].map do |key, value|
