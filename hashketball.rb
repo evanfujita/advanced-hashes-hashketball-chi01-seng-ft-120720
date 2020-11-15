@@ -127,6 +127,17 @@ def game_hash
   }
 end
 
+def most_points_scored
+  points = Hash.new
+  game_hash[:home][:players].each do |key, value|
+    
+    binding.pry
+  
+end
+end
+
+
+
 def team_names
   teams = Array.new
   game_hash.each do |court, categories|
@@ -219,12 +230,5 @@ def big_shoe_rebounds
     foot_hash.sort.max[1]
   end
   
-def most_points_scored
-  points = Hash.new
-  game_hash[:home][:players].each do |key, value|
-    
-    binding.pry
-  
-end
-end
+
   
