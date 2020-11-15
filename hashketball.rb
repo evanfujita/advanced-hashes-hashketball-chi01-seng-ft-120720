@@ -154,7 +154,6 @@ def team(player)
       end
     end
     team_hash
-    binding.pry
 end
 
 def find(player)
@@ -171,6 +170,7 @@ end
 
 def player_stats(player)
   player_hash = team(player)
+  binding.pry
 
 end
 
