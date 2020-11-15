@@ -225,5 +225,5 @@ def big_shoe_rebounds
     end
     ç
   end
-≈  binding.pry
+  binding.pry
 end
