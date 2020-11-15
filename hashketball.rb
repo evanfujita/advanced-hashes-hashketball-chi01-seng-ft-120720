@@ -148,7 +148,7 @@ end
 def team(name)
   team_hash = Hash.new
   game_hash.map do |key, value|
-    if value[:team_name] == name
+      puts "YES"
       
   end
   binding.pry
