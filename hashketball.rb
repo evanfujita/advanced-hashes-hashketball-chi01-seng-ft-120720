@@ -175,6 +175,11 @@ def player_stats(player)
 end
 
 def num_points_scored(player)
-  points = find(player)
-  points[:points]
+  player = find(player)
+  player[:points]
+end
+
+def shoe_size(player)
+  player = find(player)
+  player[:shoe]
 end
