@@ -185,7 +185,6 @@ end
 def long_name_steals_a_ton?
   long_name = player_with_longest_name
   steal_hash = Hash.new
-     
     game_hash[:home][:players].each do |key, value|
       steals = key[:steals]
       name = key[:player_name]
@@ -197,11 +196,8 @@ def long_name_steals_a_ton?
       steal_hash[name] = key[:steals]
     end
     steal_hash.max[0] == long_name
-    
 end
-    long_name_steals_a_ton?
-
-
+ 
 
 def team_names
   teams = Array.new
@@ -221,6 +217,7 @@ def team_colors(team)
   team_colors
 end
 
+
 def team(name)
     team_hash = Hash.new
      if game_hash[:home][:team_name] == name
@@ -231,6 +228,7 @@ def team(name)
       end
       team_hash
 end
+
 
 def team_player(player)
     player_hash = Hash.new
@@ -247,6 +245,7 @@ def team_player(player)
     player_hash
 end
 
+
 def find(player)
   player_hash = team_player(player)
   hash = Hash.new
@@ -257,19 +256,23 @@ def find(player)
   hash[player]
 end
 
+
 def player_stats(player)
   stats = find(player)
 end
+
 
 def num_points_scored(player)
   player = find(player)
   player[:points]
 end
 
+
 def shoe_size(player)
   player = find(player)
   player[:shoe]
 end
+
 
 def player_numbers(name)
     numbers = Array.new
@@ -279,6 +282,7 @@ def player_numbers(name)
     end
     numbers
 end
+
 
 def big_shoe_rebounds
   foot_hash = Hash.new
