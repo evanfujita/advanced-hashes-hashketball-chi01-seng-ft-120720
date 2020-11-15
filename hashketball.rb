@@ -164,10 +164,8 @@ def player_with_longest_name
   count = 0
   game_hash.each do |key, value|
    
-        puts value[player_name]
+        puts value[:player_name]
       end
-    
-
 end
 player_with_longest_name
     
