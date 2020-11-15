@@ -162,7 +162,6 @@ def find(player)
   hash = Hash.new
   player_hash.map do |key, value| 
     name = key[:player_name]
-    binding.pry
     hash[name] = key
   end
   hash[player]
