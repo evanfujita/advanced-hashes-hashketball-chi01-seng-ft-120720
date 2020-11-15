@@ -196,8 +196,14 @@ def shoe_size(player)
   player[:shoe]
 end
 
-def player_numbers(team)
-
+def player_numbers(name)
+    numbers = Array.new
+    team_hash = team(name)
+    team_hash.each do |key, value|
+      
+      binding.pry
+      
+    end
 end
 
 def big_shoe_rebounds
