@@ -1,4 +1,5 @@
-# Write your code below game_hash
+require 'pry'
+
 def game_hash
   {
     home: {
@@ -126,4 +127,57 @@ def game_hash
   }
 end
 
-# Write code here
+def team_names
+  teams = Array.new
+  game_hash.each do |court, categories|
+    teams << categories[:team_name]
+  end  
+  teams
+end
+
+def team_colors(team)
+  team_colors = Array.new
+  game_hash.each do |court, categories|
+    if categories[:team_name] == team
+    team_colors = categories[:colors]
+  end
+  end  
+  team_colors
+end
+
+def team(player)
+    player_hash = Hash.new
+    game_hash.each do |key, value|
+      if game_hash[:home][:players].include?(player)
+        player_hash = game_hash[:home][:players]
+      else player_hash = game_hash[:away][:players]
+      end
+    end
+    player_hash
+end
+
+def find(player)
+  player_hash = team(player)
+  hash = Hash.new  
+  count = 0
+    player_hash.each do |key, value|
+      name = key[:player_name]
+        hash[name] = player_hash[count]
+        count +=1
+      end
+    hash[player]
+end
+
+def player_stats(player)
+  stats = find(player)
+  stats
+  
+end
+
+
+
+def num_points_scored(player)
+  stats = find(player)
+  binding.pry
+  stats[:points]
+end
