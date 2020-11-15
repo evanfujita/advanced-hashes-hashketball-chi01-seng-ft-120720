@@ -168,6 +168,7 @@ def player_with_longest_name
    
         puts ke1[:player_name]
       end
+    end
 end
 player_with_longest_name
     
