@@ -171,7 +171,7 @@ end
 def player_stats(player)
   team(player)
   find(player)
-  stat = find(player)
+  
 end
 
 def num_points_scored(player)
