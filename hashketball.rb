@@ -149,14 +149,14 @@ def team(player)
     player_hash = Hash.new
     game_hash.each do |key, value|
       if game_hash[:home][:players].include?(player)
-        player_hash = game_hash[:home][:players]
+        player_hash[:team] = game_hash[:home][:players]
       elsif 
         game_hash[:away][:players].include?(player)
-      player_hash = game_hash[:away][:players]
+      player_hash[:team] = game_hash[:away][:players]
       end
     end
-    player_hash
     binding.pry
+    player_hash[:team]
 end
 
 def find(player)
