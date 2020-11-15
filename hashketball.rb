@@ -172,7 +172,7 @@ def player_stats(player)
   player_hash = team(player)
   hash = Hash.new
   player_hash.map do |key, value| 
-    key
+    key[:player_name] = key
    
   binding.pry
 end
