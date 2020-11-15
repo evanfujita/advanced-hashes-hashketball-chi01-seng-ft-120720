@@ -141,7 +141,6 @@ def most_points_scored
 end
   hash_points.max_by { |player, points| points}
 end
-most_points_scored
 
 def winning_team
   home_points = 0
