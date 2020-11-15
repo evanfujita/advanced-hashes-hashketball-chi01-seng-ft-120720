@@ -168,16 +168,8 @@ def find(player)
 end
 
 def player_stats(player)
-    player_hash = Hash.new
-      game_hash[:home][:players].map do |key, value|
-        if key[:player_name] == (player)
-        player_hash = game_hash[:home][:players]
-      else
-      player_hash = game_hash[:away][:players]
-      
-      end
-    end
-    player_hash
+
+
 end
 
 def num_points_scored(player)
