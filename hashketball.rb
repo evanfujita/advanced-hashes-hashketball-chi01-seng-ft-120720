@@ -150,6 +150,7 @@ def team(player)
       game_hash[:home][:players].map do |key, value|
         if key[:player_name] == (player)
         player_hash = game_hash[:home][:players]
+        binding.pry
       else
       player_hash = game_hash[:away][:players]
       end
