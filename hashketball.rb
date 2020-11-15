@@ -130,7 +130,9 @@ end
 def most_points_scored
   points = Hash.new
   game_hash[:home][:players].each do |key, value|
-    
+    points = key[:points]
+    player = key[:player_name]
+    hash[player] = points
     binding.pry
   
 end
