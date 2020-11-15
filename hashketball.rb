@@ -200,10 +200,9 @@ def player_numbers(name)
     numbers = Array.new
     team_hash = team(name)
     team_hash[:players].each do |key, value|
-      
-      binding.pry
-      
+      numbers << key[:number]
     end
+    numbers
 end
 
 def big_shoe_rebounds
