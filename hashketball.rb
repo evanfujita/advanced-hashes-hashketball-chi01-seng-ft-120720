@@ -179,8 +179,8 @@ def player_stats(player)
       binding.pry
       end
     end
-  
     player_hash
+end
 end
 
 def num_points_scored(player)
