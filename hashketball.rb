@@ -266,6 +266,3 @@ def big_shoe_rebounds
     end
     foot_hash.sort.max[1]
   end
-  
-
-  
