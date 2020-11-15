@@ -192,8 +192,14 @@ end
 def player_numbers(team)
     team_hash = Hash.new
   game_hash.map do |key, value|
-     binding.pry
-end
+     if game_hash[:home][:team_name] == team
+       team_hash = game_hash[:home]
+      elsif
+      game_hash[:away][:team_name] == team
+        team_hash = game)hash[:away]
+      end
+          binding.pry
+      team_hash
 end
 
 def big_shoe_rebounds
