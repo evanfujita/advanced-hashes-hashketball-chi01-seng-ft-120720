@@ -170,8 +170,18 @@ def find(player)
 end
 
 def player_stats(player)
-  stats = find(player)
-  stats
+    player_hash = Hash.new
+    game_hash.each do |key, value|
+      if game_hash[:home][:players].include?(player)
+        player_hash = game_hash[:home][:players]
+        binding.pry
+      else
+        game_hash[:away][:players].include?(player)
+      player_hash = game_hash[:away][:players]
+      end
+      binding.pry
+    end
+    player_hash
 end
 
 def num_points_scored(player)
