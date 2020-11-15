@@ -161,13 +161,14 @@ def winning_team
 end
 
 def player_with_longest_name
+  name_array = Array.new
   count = 0
   length = 0
   game_hash.each do |key, value|
-   puts value[:players][count][:player_name]
-      
-      
+   name_array.push(value[:players][count][:player_name])
+   
     end
+  name_array
 end
 player_with_longest_name
     
