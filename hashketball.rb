@@ -176,7 +176,7 @@ def player_with_longest_name
       longest_name = name
     end
   end
-  name
+  longest_name
 end
 player_with_longest_name
     
