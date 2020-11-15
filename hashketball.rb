@@ -174,7 +174,7 @@ def player_with_longest_name
     end
   name_array.each do |name|
     if name.length > length
-      puts "#[name]"
+      puts "#{name}"
       longun = name
     end
   end
