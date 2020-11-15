@@ -167,7 +167,9 @@ def find(player)
 end
 
 def player_stats(player)
-
+  stats = find(player)
+  stats
+  binding.pry
 end
 
 
