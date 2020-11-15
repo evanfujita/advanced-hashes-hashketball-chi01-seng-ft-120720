@@ -133,8 +133,11 @@ def most_points_scored
     points = key[:points]
     player = key[:player_name]
     hash_points[player] = points
-    
-  
+  end
+  game_hash[:away][:players].each do |key, value|
+    points = key[:points]
+    player = key[:points]
+    hash_points[player] = points
 end
   hash_points
 end
