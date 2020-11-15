@@ -209,6 +209,7 @@ def big_shoe_rebounds
   number = 0
   game_hash.map do |key, value|
     value.map do |key1, value1|
+      binding.pry
       if key1[:shoe] > number
 
         number = key1[:shoe]
