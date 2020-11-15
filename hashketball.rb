@@ -145,7 +145,9 @@ def team_colors(team)
   team_colors
 end
 
-def team(player)
+
+
+def team_player(player)
     player_hash = Hash.new
       game_hash[:home][:players].map do |key, value|
         if key[:player_name] == player
@@ -161,7 +163,7 @@ def team(player)
 end
 
 def find(player)
-  player_hash = team(player)
+  player_hash = team_player(player)
   hash = Hash.new
   player_hash.map do |key, value| 
     name = key[:player_name]
