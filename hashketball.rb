@@ -171,7 +171,11 @@ def player_with_longest_name
         name_array.push(key[:player_name])
    count += 1
     end
-  name_array
+  name_array.each do |name|
+    if name.length > count
+      longest_name = name
+    end
+    name
 end
 player_with_longest_name
     
