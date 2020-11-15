@@ -173,11 +173,11 @@ def player_stats(player)
   hash = Hash.new
   player_hash.map do |key, value| 
     key[:player_name] = key
-   
+  if key 
   binding.pry
-  puts "YES"
 end
-binding.pry
+end
+
 end
 
 def num_points_scored(player)
