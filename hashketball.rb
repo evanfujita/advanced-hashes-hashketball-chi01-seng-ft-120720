@@ -198,7 +198,7 @@ def player_numbers(team)
       end
     end
   game_hash[:away].map do |key, value|
-      if key[:team_name] == team
+      if key == team
         team_hash = game_hash[:away]
         binding.pry
       end
