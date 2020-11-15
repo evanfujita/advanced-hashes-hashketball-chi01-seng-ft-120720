@@ -170,8 +170,10 @@ end
 
 def player_stats(player)
   player_hash = team(player)
-  player_hash.each do |key, value|
-  
+  hash = Hash.new
+  player_hash.map do |key, value|
+    
+    
   binding.pry
 end
 end
