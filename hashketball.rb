@@ -171,14 +171,13 @@ end
 
 def player_stats(player)
     player_hash = Hash.new
-      if game_hash[:home][:players].include?(player)
+      game_hash[:home][:players].map |key, value|
+        if value[:player_name] == (player)
         player_hash = game_hash[:home][:players]
-        binding.pry
       else
-        game_hash[:away][:players].include?(player)
       player_hash = game_hash[:away][:players]
       end
-      binding.pry
+    end
   
     player_hash
 end
