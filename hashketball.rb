@@ -179,7 +179,6 @@ def player_stats(player)
       
       end
     end
-    binding.pry
     player_hash
 end
 
