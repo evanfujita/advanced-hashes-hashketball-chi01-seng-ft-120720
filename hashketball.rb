@@ -164,6 +164,7 @@ def player_with_longest_name
   name_array = Array.new
   count = 0
   length = 0
+  longun = ""
      game_hash[:home][:players].map do |key, value|
         name_array.push(key[:player_name])
       end
