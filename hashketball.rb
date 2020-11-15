@@ -166,7 +166,7 @@ def player_with_longest_name
   length = 0
   game_hash.each do |key, value|
    name_array.push(value[:players][count][:player_name])
-   
+   count += 1
     end
   name_array
 end
