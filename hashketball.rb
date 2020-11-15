@@ -158,25 +158,17 @@ end
 
 def find(player)
   player_hash = team(player)
-  hash = Hash.new  
-  count = 0
-    player_hash.each do |key, value|
-      name = key[:player_name]
-        hash[name] = player_hash[count]
-        count +=1
-      end
-    hash[player]
+  hash = Hash.new
+  player_hash.map do |key, value| 
+    name = key[:player_name]
+    hash[name] = key
+  end
+  hash[player]
 end
 
 def player_stats(player)
-  player_hash = team(player)
-  hash = Hash.new
-  player_hash.map do |key, value| 
-  if 
-  binding.pry
-end
-end
 
+end
 end
 
 def num_points_scored(player)
