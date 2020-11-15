@@ -153,7 +153,7 @@ def team(player)
       else player_hash = game_hash[:away][:players]
       end
     end
-    team_hash
+    player_hash
 end
 
 def find(player)
@@ -173,7 +173,7 @@ def player_stats(player)
   hash = Hash.new
   player_hash.map do |key, value| 
     key[:player_name] = key
-  if key 
+  if 
   binding.pry
 end
 end
