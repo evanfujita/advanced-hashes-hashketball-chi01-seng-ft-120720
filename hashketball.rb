@@ -230,19 +230,23 @@ def player_numbers(name)
 end
 
 def big_shoe_rebounds
-  number = 0
+  foot_hash = Hash.new
+  size = 0
   rebounds = 0
   game_hash[:away][:players].each do |key, value|
     if key[:shoe] > number
-      h_number = key[:shoe]
+      h_size = key[:shoe]
       h_rebounds = key[:rebounds]
+      foot_hash[h_size] = h_rebounds
     end
   end
   game_hash[:away][:players].each do |key, value|
     if key[:shoe] > number
-      number = key[:shoe]
-      rebounds = key[:rebounds]
+      a_size = key[:shoe]
+      a_rebounds = key[:rebounds]
+      foot_hash[a_size] = a_rebounds
+      binding.pry
     end
   end
-  if 
+  
 end
