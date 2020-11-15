@@ -196,7 +196,7 @@ def long_name_steals_a_ton?
       name = key[:player_name]
       steal_hash[name] = key[:steals]
     end
-    steal_hash
+    steal_hash.max
     
 end
     long_name_steals_a_ton?
