@@ -174,7 +174,6 @@ end
 
 
 def num_points_scored(player)
-  stats = find(player)
-  stats[:points]
-
+  points = find(player)
+  points[:points]
 end
