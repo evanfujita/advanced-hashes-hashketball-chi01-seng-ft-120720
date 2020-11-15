@@ -192,10 +192,16 @@ end
 def player_numbers(team)
   numbers = Array.new
     team_hash = Hash.new
-  game_hash.map do |key, value|
-      puts "YES"
-      
-  binding.pry
+  game_hash[:home].map do |key, value|
+      if key[:team_name] == team
+        team_hash = game_hash[:home]
+      end
+    end
+  game_hash[:away].map do |key, value|
+      if key[:team_name] == team
+        team_hash = game_hash[:away]
+      end
+      binding.pry
 end
 end
 
