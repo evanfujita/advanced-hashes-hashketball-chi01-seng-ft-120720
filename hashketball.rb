@@ -176,6 +176,6 @@ end
 def num_points_scored(player)
   stats = find(player)
   stats.each do |key, value|
-    key[:points]
+    key[:points].to_i
   end
 end
