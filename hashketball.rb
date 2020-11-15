@@ -176,9 +176,10 @@ def player_stats(player)
         player_hash = game_hash[:home][:players]
       else
       player_hash = game_hash[:away][:players]
-      binding.pry
+      
       end
     end
+    binding.pry
     player_hash
 end
 
