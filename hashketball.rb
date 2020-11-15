@@ -163,11 +163,11 @@ end
 def player_with_longest_name
   count = 0
   game_hash.each do |key, value|
-      if count < value[:player_name].count
-        puts "YES"
+   
+        puts value[player_name]
       end
     
-end
+
 end
 player_with_longest_name
     
