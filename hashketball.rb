@@ -220,9 +220,6 @@ def big_shoe_rebounds
 
 
       end
-binding.pry
-    
-  end
 end
 rebounds
 end
