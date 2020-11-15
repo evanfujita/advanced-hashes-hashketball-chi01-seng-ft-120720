@@ -155,7 +155,6 @@ def team(player)
       player_hash[:team] = game_hash[:away][:players]
       end
     end
-    binding.pry
     player_hash[:team]
 end
 
