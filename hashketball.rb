@@ -133,10 +133,10 @@ def most_points_scored
     points = key[:points]
     player = key[:player_name]
     hash[player] = points
-    binding.pry
+    
   
 end
-binding.pry
+
 end
 
 
