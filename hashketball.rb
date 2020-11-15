@@ -210,9 +210,11 @@ def big_shoe_rebounds
   game_hash.each do |key, value|
     value.each do |key1, value1|
       if key1[:shoe] > number
+        binding.pry
         number = key1[:shoe]
         beast = key1[:player_name]
         rebounds = key1[:rebounds]
+        binding.pry
       end
     binding.pry
     
