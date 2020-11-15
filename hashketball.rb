@@ -146,12 +146,8 @@ def team_colors(team)
 end
 
 def team(name)
-  team_hash = Hash.new
-  game_hash.map do |key, value|
-      puts "YES"
-      
-  binding.pry
-end
+
+
 end
 
 def team_player(player)
@@ -194,10 +190,14 @@ def shoe_size(player)
 end
 
 def player_numbers(team)
-  
   numbers = Array.new
-  
+    team_hash = Hash.new
+  game_hash.map do |key, value|
+      puts "YES"
+      
+  binding.pry
 end
 
 def big_shoe_rebounds
+  
 end
