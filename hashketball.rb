@@ -170,7 +170,7 @@ end
 
 def player_stats(player)
   stats = team(player)
-  stats.each do |key, value|
+  stats
     
   end
   
