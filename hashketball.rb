@@ -166,6 +166,7 @@ def find(player)
         count +=1
       end
     hash[player]
+    binding.pry
 end
 
 def player_stats(player)
