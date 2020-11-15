@@ -199,7 +199,7 @@ end
 def player_numbers(name)
     numbers = Array.new
     team_hash = team(name)
-    team_hash.each do |key, value|
+    team_hash[:players].each do |key, value|
       
       binding.pry
       
