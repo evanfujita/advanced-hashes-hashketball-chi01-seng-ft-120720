@@ -153,7 +153,8 @@ def team(player)
       else player_hash = game_hash[:away][:players]
       end
     end
-    player_hash
+    team_hash
+    binding.pry
 end
 
 def find(player)
@@ -169,13 +170,10 @@ def find(player)
 end
 
 def player_stats(player)
-  find(player)
-  
+  player_hash = team(player)
+
 end
 
 def num_points_scored(player)
-  stats = find(player)
-  stats.each do |key, value|
-    key[:points].to_i
-  end
+
 end
