@@ -147,10 +147,10 @@ end
 
 def team(name)
     team_hash = Hash.new
-     if game_hash[:home][:team_name] == team
+     if game_hash[:home][:team_name] == name
        team_hash = game_hash[:home]
       elsif
-      game_hash[:away][:team_name] == team
+      game_hash[:away][:team_name] == name
         team_hash = game_hash[:away]
       end
           binding.pry
