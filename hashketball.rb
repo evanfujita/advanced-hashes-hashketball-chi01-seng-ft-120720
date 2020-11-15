@@ -156,31 +156,6 @@ def team(name)
       team_hash
 end
 
-def home_team_feet
-  number = 0
-  rebounds = 0
-  game_hash[:home][:players].each do |key, value|
-    if key[:shoe] > number
-      number = key[:shoe]
-      rebounds = key[:rebounds]
-    end
-  end
-  rebounds
-end
-
-def away_team_feet
-  number = 0
-  rebounds = 0
-  game_hash[:away][:players].each do |key, value|
-    if key[:shoe] > number
-      number = key[:shoe]
-      rebounds = key[:rebounds]
-    end
-  end
-  rebounds
-end
-  
-
 def team_player(player)
     player_hash = Hash.new
       game_hash[:home][:players].map do |key, value|
